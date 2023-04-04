@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+
+    <!--Title Icon-->
+    <link rel = "icon" href = "title.png" type = "image/x-icon">
+    <!--FontAwsome-->
+    <script src="https://kit.fontawesome.com/b510de1034.js" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+    <div>
+        <div class = "d-flex  row  sticky-top">
+            <aside class = "col-xl-3 col-lg-1 col-md-1 border position-sticky ">
+
+                <!--Logo-->
+                <div>
+                    <section class = "py-4 px-1 pointer childss"><a href=""><image src = "logo.PNG" width = "110px"></image></a></section>
+                </div>
+
+                    <!--Home-->
+                    <section class = "pointer">
+                            <image src = Home.png width = "30px" class = "px-1 my-3 ms-3 m-1 imgicon"></image>
+                            <b><t class = "iconText"> Home </t> </b>
+                    </section>
+                    
+                    <!--Search-->
+                    <section class = "pointer">
+                        <image src = Search.PNG width = "30px" class = "px-1 my-3 ms-3 m-1 imgicon"></image>
+                                <t class = "iconText">Search</t>
+                    </section>
+
+                    <!--Explore-->
+                    <section class = "pointer">
+                        <image src = Explore.PNG width = "30px" class = "px-1 my-3 ms-3 m-1 imgicon"></image>
+                        <t class = "iconText">Explore</t>
+                    </section>
+
+                    <!--Reels-->
+                    <section class = "pointer">
+                        <image src = Reels.PNG width = "30px" class = "px-1 my-3 ms-3 m-1 imgicon"></image>
+                        <t class = "iconText">Reels</t>
+                    </section>
+
+                    <!--Messages-->
+                    <section class = "pointer">
+                        <image src = message.PNG width = "30px" class = "px-1 my-3 ms-3 m-1 imgicon"></image>
+                        <t class = "iconText">Messages</t>
+                    </section>
+
+                    <!--Notification-->
+                    <section class = "pointer">
+                        <image src = Notification.PNG width = "30px" class = "px-1 my-3 ms-3 m-1 imgicon"></image>
+                        <t class = "iconText">Notifications</t>
+                    </section>
+
+                    <!--Create-->
+                    <section class = "pointer">
+                        <image src = Create.PNG width = "30px" class = "px-1 my-3 ms-3 m-1 imgicon"></image>
+                        <t class = "iconText">Create</t>
+                    </section>
+
+                    <!--Profile-->
+                    <section class = "pointer">
+                        <image src = profile.PNG width = "30px" class = "px-1 my-3 ms-3 m-1 imgicon"></image>
+                        <t class = "iconText">Profile</t>
+                    </section>
+
+                    <!--More-->
+                    <section class = "pointer bottomed">
+                        <div>
+                            <div class="btn-group dropup">
+                                <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">
+                                    <image src = More.PNG width = "30px" class = "px-1 my-3 ms-3 m-1 imgicon"></image> <sentence class = "sentence"> <t class = "iconText">More</t></sentence>
+                                </button>
+                                        <ul class="dropdown-menu">
+                              <!-- Dropdown menu links -->
+                                            <li><a class="dropdown-item bottomborder" href="#">Settings</a></li>
+                                            <li><a class="dropdown-item bottomborder" href="#">Your activity</a></li>
+                                            <li><a class="dropdown-item bottomborder" href="#">Saved</a></li>
+                                            <li><a class="dropdown-item bottomborder" href="#">Switch appearance</a></li>
+                                            <li><a class="dropdown-item bottomborder" href="#">Report a problem</a></li>
+                                            <li><a class="dropdown-item bottomborder" href="#">Switch accounts</a></li>
+                                            <li><a class="dropdown-item bottomborder" href="#">Log out</a></li>
+                                        </ul>
+                            </div>
+                        </div>  
+                    </section>
+
+
+
+            </aside>
+                <!--MAIN-->
+
+        
+            <main class = "col-xl-5 col-md-8 cold-sm-5">
+                <section class = "container">     
+               
+                    <!--Stories-->
+                       
+                            <div class = "container mt-4 ms-5 mb-3 ">
+                                <div class = "horizontal-scroll">
+                                <div class="btn-scroll" id="btn-scroll-left" onclick="scrollHorizontally(1)"><i class = "fas fa-chevron-left"></i></div>
+                                <div class="btn-scroll" id="btn-scroll-right" onclick="scrollHorizontally(-1)"><i class = "fas fa-chevron-right"></i></div>
+                                <div class="storys-container">
+                                    <div class="story-circle"><img src="./Stories/Story1.jpg" alt="">
+                                        <div class="story-names">user1</div>
+                                    </div>
+                                    <div class="story-circle"><img src="./Stories/Story2.jpg" alt="">
+                                        <div class="story-names">user2</div>
+                                    </div>
+                                    <div class="story-circle"><img src="./Stories/Story3.jpg" alt="">
+                                        <div class="story-names">user3</div>
+                                    </div>
+                                    <div class="story-circle"><img src="./Stories/Story4.png" alt="">
+                                        <div class="story-names">user4</div>
+                                    </div>
+                                    <div class="story-circle"><img src="./Stories/Story5.jpg" alt="">
+                                        <div class="story-names">user5</div>
+                                    </div>
+                                    <div class="story-circle"><img src="./Stories/Story6.png" alt="">
+                                        <div class="story-names">user6</div> 
+                                    </div>
+                                    <div class="story-circle"><img src="./Stories/Story7.jpg" alt="">
+                                        <div class="story-names">user7</div> 
+                                    </div>
+                                    <div class="story-circle"><img src="./Stories/Story8.jpg" alt="">
+                                        <div class="story-names">user8</div> 
+                                    </div>
+                                    <div class="story-circle"><img src="./Stories/Story9.jpg" alt="">
+                                        <div class="story-names">user9</div> 
+                                    </div>
+                                    <div class="story-circle"><img src="./Stories/Story10.jpg" alt="">
+                                        <div class="story-names">user10</div> 
+                                    </div>
+                                    <div class="story-circle"><img src="./Stories/Story11.png" alt="">
+                                        <div class="story-names">user11</div>  
+                                    </div>
+                                    <div class="story-circle"><img src="./Stories/Story12.png" alt="">
+                                        <div class="story-names">user12</div> 
+                                    </div>
+                                    <div class="story-circle"><img src="./Stories/Story13.jpg" alt="">
+                                        <div class="story-names">user13</div> 
+                                    </div>
+                                    <div class="story-circle"><img src="./Stories/Story14.jpg" alt="">
+                                        <div class="story-names">user14</div> 
+                                    </div>                    
+                                </div>
+                                </div>
+                            </div>
+                       
+                            <script>
+
+                                let currentScrollPosition = 0;
+                                let scrollAmount = 320;
+
+                                 const sCont = document.querySelector(".storys-container");
+                                 const hScroll = document.querySelector(".horizontal-scroll");
+                                 const btnScrollleft = document.querySelector("#btn-scroll-left");
+                                 const btnScrollRight = document.querySelector("#btn-scroll-right");
+
+                                 btnScrollleft.style.opacity - "0";
+
+                                let maxScroll = -sCont.offsetWidth + hScroll.offsetWidth;
+
+                                function scrollHorizontally(val){
+                                    currentScrollPosition += (val * scrollAmount);
+
+                                    if(currentScrollPosition > 0){
+                                        currentScrollPosition = 0
+                                        btnScrollleft.style.opacity = "0";
+                                    }else{
+                                        btnScrollleft.style.opacity = "1";
+                                    }
+
+                                    if(currentScrollPosition <= maxScroll){
+                                        currentScrollPosition = maxScroll;
+                                        btnScrollRight.style.opacity = "0";
+                                    }else{
+                                        btnScrollRight.style.opacity = "1";
+                                    }
+
+                                    sCont.style.left = currentScrollPosition + "px";
+                                }
+
+                            </script>
+                        <!--Story End-->
+                            <!--NewsFeed-->
+                        <div class = "container mt-4 ms-5 mb-3">
+                            
+                            <div class = "post">
+                                <div class="info">
+                                
+                                        <div class="profile-pic">
+                                            <img src="./Newsfeed/profile1.PNG" alt="">
+                                            <b class = "username">modern_web_channel</b>
+                                            <p class = "place">Cagayan de Oro, Philippines</p>
+                                        </div>
+                                        <img src="options.PNG" class = "options" alt="">
+                                
+                                </div>
+                                <img src="./Newsfeed/News2.jpg" class = "post-image" alt="">
+                                <div class = "post-content">
+                                    <p class ="likes">1,012 likes</p>
+                                    <p class = "description"><span>username </span>Audi S7
+                                        •Viti 2015
+                                        •Motorri 4.0 TFsi
+                                        •160.000 KM
+                                        •Full Options</p>
+                                        <p class ="post-time">2 minutes ago</p>
+                                </div>
+                                <div class = "comment-wrapper">
+                                    <img src="smile.PNG" class = "icon"alt="">
+                                    <input type = "text" class = "comment-box" placeholder = "Add a comment">
+                                    <button class = "comment-btn">post</button> 
+                                </div>
+                            </div>
+                            
+                        </div>
+                            <!--NewsFeed-->
+                            <div class = "container mt-4 ms-5 mb-3">
+                            
+                                <div class = "post">
+                                    <div class="info">
+                                    
+                                            <div class="profile-pic">
+                                                <img src="./Newsfeed/profile1.PNG" alt="">
+                                                <b class = "username">modern_web_channel</b>
+                                                <p class = "place">Cagayan de Oro, Philippines</p>
+                                            </div>
+                                            <img src="options.PNG" class = "options" alt="">
+                                    
+                                    </div>
+                                    <img src="./Newsfeed/News2.jpg" class = "post-image" alt="">
+                                    <div class = "post-content">
+                                        <p class ="likes">1,012 likes</p>
+                                        <p class = "description"><span>username </span>Audi S7
+                                            •Viti 2015
+                                            •Motorri 4.0 TFsi
+                                            •160.000 KM
+                                            •Full Options</p>
+                                            <p class ="post-time">2 minutes ago</p>
+                                    </div>
+                                    <div class = "comment-wrapper">
+                                        <img src="smile.PNG" class = "icon"alt="">
+                                        <input type = "text" class = "comment-box" placeholder = "Add a comment">
+                                        <button class = "comment-btn">post</button> 
+                                    </div>
+                                </div>
+                                
+                            </div>
+                                <!--NewsFeed-->
+                        <div class = "container mt-4 ms-5 mb-3">
+                            
+                            <div class = "post">
+                                <div class="info">
+                                
+                                        <div class="profile-pic">
+                                            <img src="./Newsfeed/profile1.PNG" alt="">
+                                            <b class = "username">modern_web_channel</b>
+                                            <p class = "place">Cagayan de Oro, Philippines</p>
+                                        </div>
+                                        <img src="options.PNG" class = "options" alt="">
+                                
+                                </div>
+                                <img src="./Newsfeed/News2.jpg" class = "post-image" alt="">
+                                <div class = "post-content">
+                                    <p class ="likes">1,012 likes</p>
+                                    <p class = "description"><span>username </span>Audi S7
+                                        •Viti 2015
+                                        •Motorri 4.0 TFsi
+                                        •160.000 KM
+                                        •Full Options</p>
+                                        <p class ="post-time">2 minutes ago</p>
+                                </div>
+                                <div class = "comment-wrapper">
+                                    <img src="smile.PNG" class = "icon"alt="">
+                                    <input type = "text" class = "comment-box" placeholder = "Add a comment">
+                                    <button class = "comment-btn">post</button> 
+                                </div>
+                            </div>
+                            
+                        </div>
+                            <!--NewsFeed-->
+                            <div class = "container mt-4 ms-5 mb-3">
+                            
+                                <div class = "post">
+                                    <div class="info">
+                                    
+                                            <div class="profile-pic">
+                                                <img src="./Newsfeed/profile1.PNG" alt="">
+                                                <b class = "username">modern_web_channel</b>
+                                                <p class = "place">Cagayan de Oro, Philippines</p>
+                                            </div>
+                                            <img src="options.PNG" class = "options" alt="">
+                                    
+                                    </div>
+                                    <img src="./Newsfeed/News2.jpg" class = "post-image" alt="">
+                                    <div class = "post-content">
+                                        <p class ="likes">1,012 likes</p>
+                                        <p class = "description"><span>username </span>Audi S7
+                                            •Viti 2015
+                                            •Motorri 4.0 TFsi
+                                            •160.000 KM
+                                            •Full Options</p>
+                                            <p class ="post-time">2 minutes ago</p>
+                                    </div>
+                                    <div class = "comment-wrapper">
+                                        <img src="smile.PNG" class = "icon"alt="">
+                                        <input type = "text" class = "comment-box" placeholder = "Add a comment">
+                                        <button class = "comment-btn">post</button> 
+                                    </div>
+                                </div>
+                                
+                            </div>
+                                <!--NewsFeed-->
+                        <div class = "container mt-4 ms-5 mb-3">
+                            
+                            <div class = "post">
+                                <div class="info">
+                                
+                                        <div class="profile-pic">
+                                            <img src="./Newsfeed/profile1.PNG" alt="">
+                                            <b class = "username">modern_web_channel</b>
+                                            <p class = "place">Cagayan de Oro, Philippines</p>
+                                        </div>
+                                        <img src="options.PNG" class = "options" alt="">
+                                
+                                </div>
+                                <img src="./Newsfeed/News2.jpg" class = "post-image" alt="">
+                                <div class = "post-content">
+                                    <p class ="likes">1,012 likes</p>
+                                    <p class = "description"><span>username </span>Audi S7
+                                        •Viti 2015
+                                        •Motorri 4.0 TFsi
+                                        •160.000 KM
+                                        •Full Options</p>
+                                        <p class ="post-time">2 minutes ago</p>
+                                </div>
+                                <div class = "comment-wrapper">
+                                    <img src="smile.PNG" class = "icon"alt="">
+                                    <input type = "text" class = "comment-box" placeholder = "Add a comment">
+                                    <button class = "comment-btn">post</button> 
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </section>
+            </main>   
+
+
+
+             <aside class="col-xl-3 col-lg-3">
+                <div class ="rightside container">
+                    <div class = "userprofile ">
+                        <img src="profile.PNG" alt="">
+                        <p>marky.gc</p>
+                        <p class = "bottomname">Mark</p>
+                        <p class = "switch-btn">Switch</p>
+                
+                        <p class = "suggestions">Suggestions for you</p>
+                       
+                    
+                    
+                        <div class = "userprofiletab">
+                            <img src="./Newsfeed/News1.jpg" class = "story-circle"alt="">
+                                <div class = "usernamed">
+                                    <b>User_1</b>
+                                </div>
+                            <p class = "bottomname">Followed by etc.</p>
+                            <p class = "follow-btn">Follow</p>
+
+            
+                    </div>
+                        
+                    </div>      
+                    
+                   </div>
+              
+             </aside> 
+       
+        </div>
+    </div>
+ 
+
+</body>
+</html>
