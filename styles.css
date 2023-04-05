@@ -4,7 +4,10 @@ body{
     box-sizing: border-box;
 
 }
-    
+ 
+.containter-fluid{
+    position: fixed !important;
+}
 section.pointer {
     cursor: pointer;
 }
@@ -12,8 +15,11 @@ section.pointer {
 aside.border {
     max-width: fit-content;
     position: sticky;
+    height: 100vh;
+}
 
- 
+.blankmargin {
+    margin-top: 20vh;
 }
 
 .childss {
@@ -238,6 +244,14 @@ section.container{
     margin-left: 80px;
 }
 
+.stickyleftside {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
 .comment-box {
     width: 200%;
     height: 100px;
@@ -320,6 +334,12 @@ section.container{
     position: absolute;
 }
 
+.userprofiletab img{
+    height: 60px;
+    width: 50px;
+    border-radius: 50%;
+}
+
 .follow-btn {
     margin-left: 95px;
     text-transform: capitalize;
@@ -334,14 +354,49 @@ section.container{
 
 }
 
+.suggestionuser img {
+    border-radius: 50%;
+}
+
+.bottomnav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 55px;
+        box-shadow: 0 0 3px, rgba (0,0,0,0.2);
+        overflow-x:auto;
+        display: flex;
+        justify-content: space-around;
+        z-index: 1;
+        background-color: #fff;
+}
+.topnav {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 5px 0;
+            z-index: 1;
+            background-color: #f9f9f9;
+            border: 1px solid #fff
+       
+}
+
+.iconstop {
+    display: flex;
+    justify-content: end;
+}
+
+nav.container {
+    display: flex;
+}
+
 
 @media only screen and (max-width: 1024px) {
         .iconText {
             display: none;
         }
-        aside.border {
-            border: none;
-        }
+      
         .childss {
             display: none;
         }
@@ -354,10 +409,18 @@ section.container{
         .userprofile {
             display: none;
         }
+        .stickyleftside {
+            display: none;
+
+        }
+        
 }
-@media only screen and (max-width: 600px) {
+
+@media only screen and (min-width: 767px) {
+
+    .navigationhide {
+        display: none;
+    }
+}
     
-}
-@media only screen and (max-width: 600px) {
-    
-}
+
